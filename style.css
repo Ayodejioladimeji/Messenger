@@ -537,7 +537,7 @@ body{
     transform:translate(-50%,-50%);
     background:#5CAD9F;
     box-shadow:0 0 20px, 0 0 40px #5CAD9F, 0 0 80px #5CAD9F;
-    height:530px;
+    height:550px;
     width:95%;
     border:2px solid #ca1426;
     border-radius:25px;
@@ -670,7 +670,7 @@ body{
 /* ===THE SECTION OF THE MIDDLE=== */
 .middle{
     background:url('images.jpg');
-    height:306px;
+    height:330px;
     width:100%;
     overflow:auto;
 }
@@ -749,9 +749,10 @@ body{
 
 .bottom{
     background:#ca1426;
-    height:79.5px;
+    height:80px;
     width:100%;
     border-radius:0 0 15px 15px;
+
 }
 .input{
     height:80px;
@@ -800,7 +801,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:525px;
+    height:549px;
     width:100%;
     /* border:2px solid #ca1426; */
     border-radius:25px;
@@ -888,7 +889,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:530px;
+    height:550px;
     width:100%;
     display:none;
     border:2px solid #ca1426;
@@ -906,13 +907,12 @@ body{
 /* ========THE SECTION OF THE SEARCH========= */
 .search{
     position:absolute;
-    top:49.6%;
+    top:45%;
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:525px;
+    height:490px;
     width:100%;
-    /* border:2px solid #ca1426; */
     border-radius:25px;
     display:none;
 }
@@ -944,13 +944,13 @@ body{
 }
 
 .search-right input{
-    padding:8px;
+    padding:10px;
     color:white;
-    border:1px solid green;
+    border:none;
     width:96%;
     border-radius:10px;
     margin-top:15px;
-    background:transparent;
+    background:rgb(38, 62, 58);
     outline:none;
     font-family:cursive;
 }
@@ -965,7 +965,7 @@ body{
 
 /* =====THE SECTION OF THE SEARCH BOTTOM===== */
 .search-bottom{
-    height:457px;
+    height:474px;
     width:100%;
     border-radius:0 0 20px 20px;
     overflow:auto;
@@ -981,7 +981,7 @@ body{
 /* ======THE SECTION OF THE PROFILE======= */
 .profile{
     position:absolute;
-    top:45%;
+    top:42%;
     left:60%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
@@ -1055,7 +1055,7 @@ input[type=file]{
 /* =====THE SECTION OF THE MEDIA QUERY======= */
 /* ======THE SECTION OF THE MEDIA QUERY====== */
 
-@media screen and (max-width:376px) and (min-width:321px){
+@media screen and (max-width:375px) and (min-width:321px){
 
     *{
     box-sizing:border-box;
@@ -1074,7 +1074,7 @@ body{
     transform:translate(-50%,-50%);
     background:#5CAD9F;
     box-shadow:0 0 20px, 0 0 40px #5CAD9F, 0 0 80px #5CAD9F;
-    height:530px;
+    height:550px;
     width:95%;
     border:2px solid #ca1426;
     border-radius:25px;
@@ -1207,7 +1207,7 @@ body{
 /* ===THE SECTION OF THE MIDDLE=== */
 .middle{
     background:url('images.jpg');
-    height:306px;
+    height:330px;
     width:100%;
     overflow:auto;
 }
@@ -1286,9 +1286,10 @@ body{
 
 .bottom{
     background:#ca1426;
-    height:79.5px;
+    height:80px;
     width:100%;
     border-radius:0 0 15px 15px;
+
 }
 .input{
     height:80px;
@@ -1337,7 +1338,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:525px;
+    height:549px;
     width:100%;
     /* border:2px solid #ca1426; */
     border-radius:25px;
@@ -1425,7 +1426,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:530px;
+    height:550px;
     width:100%;
     display:none;
     border:2px solid #ca1426;
@@ -1443,13 +1444,12 @@ body{
 /* ========THE SECTION OF THE SEARCH========= */
 .search{
     position:absolute;
-    top:49.6%;
+    top:45%;
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:525px;
+    height:490px;
     width:100%;
-    /* border:2px solid #ca1426; */
     border-radius:25px;
     display:none;
 }
@@ -1481,13 +1481,13 @@ body{
 }
 
 .search-right input{
-    padding:8px;
+    padding:10px;
     color:white;
-    border:1px solid green;
+    border:none;
     width:96%;
     border-radius:10px;
     margin-top:15px;
-    background:transparent;
+    background:rgb(38, 62, 58);
     outline:none;
     font-family:cursive;
 }
@@ -1502,7 +1502,7 @@ body{
 
 /* =====THE SECTION OF THE SEARCH BOTTOM===== */
 .search-bottom{
-    height:457px;
+    height:474px;
     width:100%;
     border-radius:0 0 20px 20px;
     overflow:auto;
@@ -1518,7 +1518,7 @@ body{
 /* ======THE SECTION OF THE PROFILE======= */
 .profile{
     position:absolute;
-    top:45%;
+    top:42%;
     left:60%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
