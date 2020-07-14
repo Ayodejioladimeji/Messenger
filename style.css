@@ -1074,7 +1074,7 @@ body{
     transform:translate(-50%,-50%);
     background:#5CAD9F;
     box-shadow:0 0 20px, 0 0 40px #5CAD9F, 0 0 80px #5CAD9F;
-    height:550px;
+    height:650px;
     width:95%;
     border:2px solid #ca1426;
     border-radius:25px;
@@ -1086,6 +1086,7 @@ body{
     width:100%;
     height:140px;
     border-radius:20px 20px 0 0;
+
 }
 
 
@@ -1207,7 +1208,7 @@ body{
 /* ===THE SECTION OF THE MIDDLE=== */
 .middle{
     background:url('images.jpg');
-    height:330px;
+    height:430px;
     width:100%;
     overflow:auto;
 }
@@ -1338,7 +1339,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:549px;
+    height:649px;
     width:100%;
     /* border:2px solid #ca1426; */
     border-radius:25px;
@@ -1355,7 +1356,7 @@ body{
 
 /* =====THE SECTION OF THE DETAILS BOX===== */
 .details-box{
-    height:432px;
+    height:552px;
     width:100%;
     overflow:auto;
     border-radius:0 0 20px 20px;
@@ -1444,11 +1445,11 @@ body{
 /* ========THE SECTION OF THE SEARCH========= */
 .search{
     position:absolute;
-    top:45%;
+    top:49.9%;
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:490px;
+    height:671px;
     width:100%;
     border-radius:25px;
     display:none;
@@ -1456,10 +1457,11 @@ body{
 
 /* =====THE SECTION OF THE SEARCH TOP===== */
 .search-top{
-    height:70px;
+    height:80px;
     width:100%;
     border-radius:20px 20px 0 0;
     background:rgb(51, 88, 82);
+    position:fixed;
 }
 .search-left{
     float:left;
@@ -1467,7 +1469,7 @@ body{
     height:70px;
 }
 .fa-arrow-left{
-    margin-top:27px;
+    margin-top:37px;
     color:white;
     font-size:15px;
     font-weight:normal;
@@ -1490,6 +1492,7 @@ body{
     background:rgb(38, 62, 58);
     outline:none;
     font-family:cursive;
+    margin-top:25px;
 }
 
 
@@ -1502,9 +1505,9 @@ body{
 
 /* =====THE SECTION OF THE SEARCH BOTTOM===== */
 .search-bottom{
-    height:474px;
+    height:647px;
     width:100%;
-    border-radius:0 0 20px 20px;
+    border-radius:20px;
     overflow:auto;
 }
 .search-bottom::-webkit-scrollbar{
