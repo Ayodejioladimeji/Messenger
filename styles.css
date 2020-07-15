@@ -512,7 +512,7 @@ input[type=file]{
 
 
 
-
+/* ========================================================================== */
 
 
 /* =====THE SECTION OF THE MEDIA QUERY======= */
@@ -1050,6 +1050,8 @@ input[type=file]{
 
 
 
+
+/* ========================================================================== */
 
 
 /* =====THE SECTION OF THE MEDIA QUERY======= */
@@ -1591,7 +1593,7 @@ input[type=file]{
 
 
 
-
+/* ========================================================================= */
 
 /* =====THE SECTION OF THE MEDIA QUERY======= */
 /* ======THE SECTION OF THE MEDIA QUERY====== */
@@ -2134,11 +2136,14 @@ input[type=file]{
 
 
 
+/* ======================================================================= */
 
-/* =====THE SECTION OF THE MEDIA QUERY======= */
+
+/* =====THE SECTION OF THE MEDIA QUERY  FOR IPAD======= */
 /* ======THE SECTION OF THE MEDIA QUERY====== */
 
-@media screen and (max-width:768px) and (min-width:426px){
+@media screen and (max-width:768px) and (min-width:768px)
+and (max-height:1024px) and (min-height:1024px){
 
     *{
     box-sizing:border-box;
@@ -2148,17 +2153,16 @@ input[type=file]{
 
 body{
     background:#ca1426;
-    display:none;
 }
 
 .main{
     position:absolute;
-    top:49%;
-    left:50%;
+    top:50%;
+    left:49.9%;
     transform:translate(-50%,-50%);
     background:#5CAD9F;
     box-shadow:0 0 20px, 0 0 40px #5CAD9F, 0 0 80px #5CAD9F;
-    height:990px;
+    height:1020px;
     width:100%;
     border:none;
     border-radius:0px;
@@ -2168,9 +2172,8 @@ body{
 .header{
 /*     background:#ca1426; */
     width:100%;
-    height:150px;
+    height:200px;
     border-radius:0;
-
 }
 
 
@@ -2187,9 +2190,9 @@ body{
     color:white;
 }
 .one h3{
-    margin-top:20px;
+    margin-top:28px;
     font-family:allura;
-    font-size:28px;
+    font-size:35px;
     text-align:center;
 }
 
@@ -2201,8 +2204,8 @@ body{
 }
 
 .fa-bell{
-    margin-top:25px;
-    font-size:19px;
+    margin-top:35px;
+    font-size:25px;
 }
 
 .three{
@@ -2213,8 +2216,8 @@ body{
 }
 
 .fa-search{
-    margin-top:25px;
-    font-size:19px;
+    margin-top:35px;
+    font-size:25px;
 }
 
 .four{
@@ -2225,8 +2228,8 @@ body{
 }
 
 .fa-user{
-    margin-top:25px;
-    font-size:19px;
+    margin-top:35px;
+    font-size:25px;
 }
 
 .five{
@@ -2237,8 +2240,8 @@ body{
 }
 
 .fa-align-right{
-    margin-top:26px;
-    font-size:19px;
+    margin-top:36px;
+    font-size:25px;
 }
 
 
@@ -2256,10 +2259,10 @@ body{
 }
 .left-image{
     border-radius:150px;
-    height:60px;
-    width:60px;
+    height:100px;
+    width:100px;
     margin:auto;
-    margin-top:20px;
+    margin-top:35px;
     border:2px solid #00ff00;
 }
 .left-image img{
@@ -2276,23 +2279,23 @@ body{
 }
 .right h4{
     color:white;
-    margin-top:20px;
+    margin-top:40px;
     text-align:center;
     font-family:monospace;
-    font-size:22px;
+    font-size:32px;
 }
 .right p{
     color:white;
     margin-top:10px;
     font-family:amita;
-    font-size:12px;
+    font-size:24px;
     text-align:center;
 }
 
 /* ===THE SECTION OF THE MIDDLE=== */
 .middle{
     background:url('images.jpg');
-    height:780px;
+    height:705px;
     width:100%;
     overflow:auto;
 }
@@ -2307,7 +2310,7 @@ body{
 .middle-right{
     float:right;
     background:rgb(15, 121, 103);
-    padding:7px;
+    padding:20px;
     width:80%;
     margin-right:15px;
     border-radius:10px;
@@ -2317,13 +2320,13 @@ body{
 }
 .middle-right p{
     color:white;
-    font-size:13px;
+    font-size:21px;
 }
 .middle-right small{
     color:white;
     margin-top:-10px;
     float:right;
-    font-size:10px;
+    font-size:15px;
 }
 .middle-right:before{
     position:absolute;
@@ -2339,7 +2342,7 @@ body{
 .middle-left{
     float:left;
     background:rgb(44, 73, 68);
-    padding:7px;
+    padding:20px;
     width:80%;
     margin-left:15px;
     border-radius:10px;
@@ -2349,13 +2352,13 @@ body{
 }
 .middle-left p{
     color:white;
-    font-size:13px;
+    font-size:21px;
 }
 .middle-left small{
     color:white;
     margin-top:-10px;
     float:right;
-    font-size:10px
+    font-size:15px
 }
 .middle-left:before{
     position:absolute;
@@ -2371,10 +2374,9 @@ body{
 
 .bottom{
     background:#ca1426;
-    height:90px;
+    height:116px;
     width:100%;
     border-radius:0;
-
 }
 .input{
     height:80px;
@@ -2383,7 +2385,7 @@ body{
 }
 
 .input input{
-    padding:15px;
+    padding:27px;
     width:95%;
     background:#26c897;
     border-radius:5px;
@@ -2402,9 +2404,9 @@ body{
     float:left;
 }
 .fa-camera{
-    font-size:25px;
+    font-size:39px;
     margin:auto;
-    margin-top:28px;
+    margin-top:33px;
     color:white;
     text-shadow:1px 1px #26c897;
 }
@@ -2412,7 +2414,7 @@ body{
 .input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: red;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 12px;
+    font-size: 22px;
 }
 
 
@@ -2420,11 +2422,11 @@ body{
 /* ======THE SECTION OF THE USERS====== */
 .users{
     position:absolute;
-    top:52%;
+    top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:1045px;
+    height:959px;
     width:100%;
     border-radius:0;
     display:none;
@@ -2440,7 +2442,7 @@ body{
 
 /* =====THE SECTION OF THE DETAILS BOX===== */
 .details-box{
-    height:800px;
+    height:902px;
     width:100%;
     overflow:auto;
     border-radius:0;
@@ -2455,22 +2457,22 @@ body{
 .user-box{
     background:rgb(44, 73, 68);
     width:100%;
-    height:80px;
+    height:130px;
 }
 
 .user-box .user-left{
     float:left;
     width:20%;
-    height:80px;
+    height:130px;
 }
 .user-left-image{
-    width:60px;
-    height:60px;
+    width:90px;
+    height:90px;
     border-radius:150px;
     border:2px solid #00ff00;
     margin:auto;
-    margin-top:10px;
-    margin-left:55px;
+    margin-top:30px;
+    margin-left:35px;
 }
 .user-left-image img{
     width:100%;
@@ -2481,7 +2483,7 @@ body{
 .user-box .user-right{
     float:right;
     width:80%;
-    height:80px;
+    height:130px;
     border-bottom:1px solid rgba(0,0,0,0.2);
 
 }
@@ -2492,9 +2494,9 @@ body{
 
 .user-details h4{
     color:white;
-    margin-top:15px;
+    margin-top:35px;
     font-family:monospace;
-    font-size:16px;
+    font-size:25px;
     font-weight:bold;
     text-transform:uppercase;
 }
@@ -2502,20 +2504,19 @@ body{
     color:white;
     margin-top:10px;
     font-family:cursive;
-    font-size:13px;
+    font-size:20px;
 }
 
 .image-view{
-    position:absolute;
+     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:550px;
+    height:959px;
     width:100%;
+    border-radius:0;
     display:none;
-    border:2px solid #ca1426;
-    border-radius:25px;
 }
 .image-view img{
     width:100%;
@@ -2528,12 +2529,12 @@ body{
 
 /* ========THE SECTION OF THE SEARCH========= */
 .search{
-    position:absolute;
-    top:55%;
+     position:absolute;
+    top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:1090px;
+    height:1025px;
     width:100%;
     border-radius:0;
     display:none;
@@ -2541,11 +2542,12 @@ body{
 
 /* =====THE SECTION OF THE SEARCH TOP===== */
 .search-top{
-    height:80px;
+    height:120px;
     width:100%;
     border-radius:0;
     background:rgb(51, 88, 82);
     position:fixed;
+    margin-top:-10px;
 }
 .search-left{
     float:left;
@@ -2553,9 +2555,9 @@ body{
     height:70px;
 }
 .fa-arrow-left{
-    margin-top:37px;
+    margin-top:40px;
     color:white;
-    font-size:15px;
+    font-size:30px;
     font-weight:normal;
 }
 
@@ -2567,7 +2569,7 @@ body{
 }
 
 .search-right input{
-    padding:10px;
+    padding:25px;
     color:white;
     border:none;
     width:96%;
@@ -2583,13 +2585,14 @@ body{
 .search-right input::-webkit-input-placeholder{
     color:#00ff00;
     font-family:amita;
-    font-size:12px;
+    font-size:20px;
 }
 
 
 /* =====THE SECTION OF THE SEARCH BOTTOM===== */
 .search-bottom{
-    height:960px;
+    margin-top:100px;
+    height:920px;
     width:100%;
     border-radius:20px;
     overflow:none;
@@ -2605,12 +2608,12 @@ body{
 /* ======THE SECTION OF THE PROFILE======= */
 .profile{
     position:absolute;
-    top:39%;
-    left:65%;
+    top:42%;
+    left:60%;
     transform:translate(-50%,-50%);
     background:rgb(44, 73, 68);
-    height:720px;
-    width:60%;
+    height:420px;
+    width:80%;
     display:none;
     border:2px solid #ca1426;
 }
@@ -2619,12 +2622,12 @@ body{
     position:absolute;
     top:10px;
     right:15px;
-    font-size:35px;
+    font-size:25px;
     font-weight:normal;
 }
 
 .profile-top{
-    height:645px;
+    height:365px;
     width:100%;
     position:relative;
 }
@@ -2635,12 +2638,12 @@ body{
 
 
 .profile-bottom{
-    height:80px;
+    height:50px;
     width:100%;
     background:#ca1426ad;
 }
 .profile-bottom button{
-    padding:20px;
+    padding:8px;
     width:40%;
     outline:none;
     border:none;
@@ -2649,25 +2652,36 @@ body{
     font-weight:bold;
     margin-top:10px;
     text-transform:uppercase;
-    font-size:17px;
 }
 
 .camera-div{
     position:absolute;
-    bottom:90px;
+    bottom:60px;
     right:10px;
     background:rgb(44, 73, 68);
     border-radius:150px;
-    height:70px;
-    width:70px;
+    height:50px;
+    width:50px;
 }
 .fa-camera-retro{
     color:white;
-    font-size:30px;
-    margin-top:20px;
+    font-size:20px;
+    margin-top:15px;
 }
 input[type=file]{
     display:none;
 }
 
 }
+
+
+
+
+
+@media screen and (max-width:823px) and (min-width:426px){
+    body{
+        visibility:hidden;
+
+    }
+}
+
