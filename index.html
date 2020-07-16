@@ -4,656 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>chatme</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="animate.css">
+    <!-- <script src="index.js"></script> -->
 
     <script>
         $(document).ready(function(){
-            $(".fa-align-right").click(function(){
-                $(".users").slideToggle('slow');
+            $(".border1").click(function(){
+                $(this).hide('slow');
+            });
+            $(".border1").click(function(){
+                $(".border2").hide('slow');
             });
         });
     </script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function(){
-            $(".fa-search").click(function(){
-                $(".search").show('slow');
+            $(".border2").click(function(){
+                $("marquee").hide('slow');
             });
-                $("#arrow").click(function(){
-                    $(".search").hide('slow');
-                });
         });
-    </script>
-
-    <script>
-        $(document).ready(function(){
-            $(".fa-user").click(function(){
-                $(".profile").show('slower');
-            });
-                $(".fa-times-circle").click(function(){
-                    $(".profile").hide('slower');
-                });
-        });
-    </script>
-
-
-    <script>
-        $(document).ready(function(){
-            $("#img").click(function(){
-                $(".image-view").show('slower');
-            });
-                $(".fa-times-circle").click(function(){
-                    $(".image-view").hide('slower');
-                });
-        });
-    </script>
-
+    </script> -->
 
 </head>
 <body>
     <div class="container">
-
-        <!-- THE SECTION OF THE MAIN LAYOBRIGHT -->
         <div class="main">
+            <img src="images/download1.jpg">
+            <img src="images/download2.jpg">
+            <img src="images/download3.jpg">
+            <img src="images/download5.jpg">
+            <img src="images/download1.jpg">
+        </div>
 
-            <!-- THE SECTION OF THE HEADER LAYOBRIGHT -->
-            <div class="header">
-                <div class="head1">
-                    <div class="one">
-                        <h3>Messenger</h3>
-                    </div>
-
-                    <div class="two">
-                        <center>
-                            <i class="fa fa-bell"></i>
-                        </center>
-                    </div>
-
-                    <div class="three">
-                        <center>
-                            <i class="fa fa-search"></i>
-                        </center>
-                    </div>
-
-                    <div class="four">
-                        <center>
-                            <i class="fa fa-user"></i>
-                        </center>
-                    </div>
-
-                    <div class="five">
-                        <center>
-                            <i class="fa fa-align-right"></i>
-                        </center>
-                    </div>
-                </div>
-
-
-                <!-- THE SECTION OF THE HEAD2 -->
-                <div class="head2">
-                    <div class="left">
-                        <div class="left-image">
-                            <img src="male.jpeg" alt="profile-image">
-                        </div>
-                    </div>
-
-                    <div class="right">
-                        <h4>LAYOBRIGHT</h4>
-                        <p> 0 Messages</p>
-                    </div>
-                </div>
+        <div class="section">
+            <div class="top-section">
+                <h3 class="animated flip slower">Messenger</h3>
             </div>
 
+            <div class="down-section animated fadeInDown">
+                <form method="POST" id="form" action="">
+                    <label>Username</label><br>
+                    <input type="text" name="username" placeholder="Provide your Username"
+                    class="animated slideInLeft slower" onkeydown="validation()" id="user">
+                    <p id="user_error"></p>
 
-            <!-- THE SECTION OF THE MIDDLE LAYOBRIGHT -->
-            <div class="middle">
-                <ul>
-                    <li>
-                        <div class="middle-right">
-                            <p>The message</p>
-                            <small>3:20pm</small>
-                        </div>
-                    </li>
+                    <label>Mobile</label><br>
+                    <input type="text" name="phone" placeholder="Phone number" class="animated slideInRight slower"
+                    onkeydown="validation()" id="phone">
+                    <p id="phone_error"></p>
 
-                    <li>
-                        <div class="middle-left">
-                            <p>The message for today</p>
-                            <small>4:15pm</small>
-                        </div>
-                    </li>
-                </ul>
+                    <input type="submit" name="join" value="CONTINUE"  class="animated fadeInUp slower">
 
+                    <h4 class="layo animated rubberBand infinite slower">LAYOBRIGHT</h4>
+                </form>
 
-                <ul>
-                        <li>
-                            <div class="middle-right">
-                                <p>The message</p>
-                                <small>3:20pm</small>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="middle-left">
-                                <p>The message for today</p>
-                                <small>4:15pm</small>
-                            </div>
-                        </li>
-                    </ul>
-
-
-                    <ul>
-                            <li>
-                                <div class="middle-right">
-                                    <p>The message</p>
-                                    <small>3:20pm</small>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="middle-left">
-                                    <p>The message for today</p>
-                                    <small>4:15pm</small>
-                                </div>
-                            </li>
-                        </ul>
-
-
-                        <ul>
-                                <li>
-                                    <div class="middle-right">
-                                        <p>The message</p>
-                                        <small>3:20pm</small>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="middle-left">
-                                        <p>The message for today</p>
-                                        <small>4:15pm</small>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <ul>
-                                    <li>
-                                        <div class="middle-right">
-                                            <p>The message</p>
-                                            <small>3:20pm</small>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="middle-left">
-                                            <p>The message for today</p>
-                                            <small>4:15pm</small>
-                                        </div>
-                                    </li>
-                                </ul>
-
-
-                                <ul>
-                                        <li>
-                                            <div class="middle-right">
-                                                <p>The message</p>
-                                                <small>3:20pm</small>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="middle-left">
-                                                <p>The message for today</p>
-                                                <small>4:15pm</small>
-                                            </div>
-                                        </li>
-                                    </ul>
-            </div>
-
-
-
-            <!-- THE SECTION OF THE BOTTOM LAYOBRIGHT -->
-            <div class="bottom">
-                <div class="input-left">
-                    <center>
-                        <i class="fa fa-camera"></i>
-                    </center>
-                </div>
-                <div class="input">
-                    <input type="text" id="message" class="message" placeholder="Enter Your Message...">
-                </div>
-            </div>
-
-
-            <!-- THE SECTION OF THE USERS -->
-
-            <div class="users">
-                <div class="head">
-                    <div class="one">
-                        <h3>Messenger</h3>
-                    </div>
-
-                    <div class="two">
-                        <center>
-                            <i class="fa fa-align"></i>
-                        </center>
-                    </div>
-
-                    <div class="three">
-                        <center>
-                            <i class="fa fa-bell"></i>
-                        </center>
-                    </div>
-
-                    <div class="four">
-                        <center>
-                            <i class="fa fa-search"></i>
-                        </center>
-                    </div>
-
-                    <div class="five">
-                        <center>
-                            <i class="fa fa-align-right"></i>
-                        </center>
-                    </div>
-
+                <div class="border1 animated slideInRight slower">
+                    <marquee>Click here to write your username----Developed By LayoBright</marquee>
                 </div>
 
-
-                <div class="details-box">
-                    <!-- THE SECTION OF THE USER-BOX -->
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                                <div class="user-details">
-                                    <h4>Layobright</h4>
-                                    <p>Are you still coming?</p>
-                                </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="female.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Kemi</h4>
-                                <p>I'm at work</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- THE SECTION OF THE USER-BOX -->
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                                <div class="user-details">
-                                    <h4>Temmy</h4>
-                                    <p>God bless you</p>
-                                </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="female.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Toke</h4>
-                                <p>Hard gurl how are you?</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- THE SECTION OF THE USER-BOX -->
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                                <div class="user-details">
-                                    <h4>Phebo</h4>
-                                    <p>meet me there</p>
-                                </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Maleek</h4>
-                                <p>i called Biodun to tell him</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- THE SECTION OF THE USER-BOX -->
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="female.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                                <div class="user-details">
-                                    <h4>yetunde</h4>
-                                    <p>I read the Bible</p>
-                                </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Biodun</h4>
-                                <p>I just credited your Account</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- THE SECTION OF THE USER-BOX -->
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="female.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                                <div class="user-details">
-                                    <h4>Nipsy</h4>
-                                    <p>I will see you tommorrow</p>
-                                </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image" id="img">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Damilare</h4>
-                                <p>Am writing codes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="image-view">
-                    <i class="fa fa-times-circle"></i>
-                    <img src="male.jpeg">
+                <div class="border2 animated slideInLeft slower">
+                    <marquee>Click here to write your phone no----Developed By LayoBright</marquee>
                 </div>
 
             </div>
-
-
-            <!-- THE SECTION OF THE SEARCH -->
-            <div class="search">
-                <div class="search-top">
-                    <div class="search-left">
-                        <center>
-                            <i class="fa fa-arrow-left" id="arrow"></i>
-                        </center>
-                    </div>
-
-                    <div class="search-right">
-                        <form action="" method="POST">
-                            <input type="text" name="search" placeholder="Enter your search here">
-
-                        </form>
-                    </div>
-                </div>
-
-                <div class="search-bottom">
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="male.jpeg" alt="user-image">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Layobright</h4>
-                                <p>08053838074</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                        <div class="user-left">
-                            <div class="user-left-image">
-                                <img src="female.jpeg" alt="user-image">
-                            </div>
-                        </div>
-
-                        <div class="user-right">
-                            <div class="user-details">
-                                <h4>Toke</h4>
-                                <p>09034565365</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="user-box">
-                            <div class="user-left">
-                                <div class="user-left-image">
-                                    <img src="male.jpeg" alt="user-image">
-                                </div>
-                            </div>
-
-                            <div class="user-right">
-                                <div class="user-details">
-                                    <h4>Temmy</h4>
-                                    <p>07035241256</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="user-box">
-                            <div class="user-left">
-                                <div class="user-left-image">
-                                    <img src="female.jpeg" alt="user-image">
-                                </div>
-                            </div>
-
-                            <div class="user-right">
-                                <div class="user-details">
-                                    <h4>Kemi</h4>
-                                    <p>09087654536</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="user-box">
-                                <div class="user-left">
-                                    <div class="user-left-image">
-                                        <img src="male.jpeg" alt="user-image">
-                                    </div>
-                                </div>
-
-                                <div class="user-right">
-                                    <div class="user-details">
-                                        <h4>Maleek</h4>
-                                        <p>08045342345</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="user-box">
-                                <div class="user-left">
-                                    <div class="user-left-image">
-                                        <img src="male.jpeg" alt="user-image">
-                                    </div>
-                                </div>
-
-                                <div class="user-right">
-                                    <div class="user-details">
-                                        <h4>Biodun</h4>
-                                        <p>0902345657</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="user-box">
-                                    <div class="user-left">
-                                        <div class="user-left-image">
-                                            <img src="female.jpeg" alt="user-image">
-                                        </div>
-                                    </div>
-
-                                    <div class="user-right">
-                                        <div class="user-details">
-                                            <h4>Yetunde</h4>
-                                            <p>09065434565</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="user-box">
-                                    <div class="user-left">
-                                        <div class="user-left-image">
-                                            <img src="male.jpeg" alt="user-image">
-                                        </div>
-                                    </div>
-
-                                    <div class="user-right">
-                                        <div class="user-details">
-                                            <h4>Phebo</h4>
-                                            <p>08035464532</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="user-box">
-                                        <div class="user-left">
-                                            <div class="user-left-image">
-                                                <img src="female.jpeg" alt="user-image">
-                                            </div>
-                                        </div>
-
-                                        <div class="user-right">
-                                            <div class="user-details">
-                                                <h4>Nifemi</h4>
-                                                <p>07034353454</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="user-box">
-                                        <div class="user-left">
-                                            <div class="user-left-image">
-                                                <img src="male.jpeg" alt="user-image">
-                                            </div>
-                                        </div>
-
-                                        <div class="user-right">
-                                            <div class="user-details">
-                                                <h4>Jed</h4>
-                                                <p>09045342543</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                </div>
-
-            </div>
-
-
-
-            <!-- THE SECTION OF THE VIEW USER IMAGE -->
-
-
-
-
-
-
-            <!-- THE SECTION OF THE PROFILE IMAGE CHANGE -->
-            <div class="profile">
-                <div class="profile-top">
-                    <i class="fa fa-times-circle"></i>
-                    <img src="male.jpeg">
-                </div>
-
-                <div class="profile-bottom">
-                    <form action="" method="POST" enctype="multipart/form-data">
-                        <div class="camera-div">
-                            <center>
-                                <label>
-                                    <i class="fa fa-camera-retro">
-                                        <input type="file" name="file">
-                                    </i>
-                                </label>
-                            </center>
-                        </div>
-                        <center>
-                            <button name="save">Save</button>
-                        </center>
-                    </form>
-                </div>
+            <div class="click">
+               <p><a href="main.html">click here</a></p>
             </div>
 
         </div>
+
+
     </div>
+
+    <script>
+        $("#form").submit(function(e){
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- <script>
+        function loadDoc(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById('').innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "main.html", true);
+            xhttp.send();
+        }
+    </script> -->
+
 </body>
 </html>
